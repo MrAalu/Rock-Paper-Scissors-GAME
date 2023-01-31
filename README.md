@@ -1,3 +1,3 @@
-# Play Rock,Paper,Scissors Against Computer
+# Rock Paper Scissors Vs. Computer
 
 Rock 🪨 Paper 📄 Scissors ✂️
