@@ -1,2 +1,3 @@
-# Rock-Paper-Scissors-GAME
-Rock 🪨 Paper 📄 Scissors ✂️  
+# Play Rock,Paper,Scissors Against Computer
+
+Rock 🪨 Paper 📄 Scissors ✂️
