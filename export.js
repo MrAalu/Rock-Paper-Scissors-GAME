@@ -18,6 +18,7 @@ export function computerChoose() {
       aiPick = "Scissors";
       break;
   }
-  document.getElementById("aipick").innerText = "AI Choose : " + aiPick;
-  console.log(aiPick);
+  document.getElementById("aipick").textContent = "AI Choose : " + aiPick;
+  //   console.log(aiPick);
+  //   console.log(num);
 }
