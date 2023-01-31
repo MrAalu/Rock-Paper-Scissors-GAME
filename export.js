@@ -30,35 +30,55 @@ let winLose;
 // User Choose ROCK
 export function rock() {
   document.getElementById("mypick").innerText = "You Choosed : Rock";
-
-  if (aiPick === "Rock") {
-    winLose = "Its a Draw";
-  } else {
-    winLose = aiPick === "Paper" ? "You Lost" : "You Win";
-  }
-  document.getElementById("result").innerText = "Result : " + winLose;
+  checkRock();
+  output();
 }
 
 // User Choose Paper
 export function paper() {
   document.getElementById("mypick").innerText = "You Choosed : Paper";
-
-  if (aiPick === "Paper") {
-    winLose = "Its a Draw";
-  } else {
-    winLose = aiPick === "Scissors" ? "You Lost" : "You Win";
-  }
-  document.getElementById("result").innerText = "Result : " + winLose;
+  checkPaper();
+  output();
 }
 
 // User Choose Scissors
 export function scissors() {
   document.getElementById("mypick").innerText = "You Choosed : Scissors";
+  checkScissors();
+  output();
+}
 
+// Condition Checking Function
+
+// User choose Rock and Checking Condition
+export function checkRock() {
+  if (aiPick === "Rock") {
+    winLose = "Its a Draw";
+  } else {
+    winLose = aiPick === "Paper" ? "You Lost" : "You Win";
+  }
+}
+
+// User choose Paper and Checking Condition
+export function checkPaper() {
+  if (aiPick === "Paper") {
+    winLose = "Its a Draw";
+  } else {
+    winLose = aiPick === "Scissors" ? "You Lost" : "You Win";
+  }
+}
+
+// User choose Scissors and Checking Condition
+export function checkScissors() {
   if (aiPick === "Scissors") {
     winLose = "Its a Draw";
   } else {
     winLose = aiPick === "Rock" ? "You Lost" : "You Win";
   }
+}
+
+// Output Function to show the Result
+
+export function output() {
   document.getElementById("result").innerText = "Result : " + winLose;
 }
