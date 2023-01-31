@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  background: lightgreen;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  border-radius: 15px;
+  background: lightblue;
+  padding: 3px;
+  border: 2px solid black;
+}
+button:active {
+  transform: translateY(3px);
+  background: rgb(192, 93, 192);
+}
