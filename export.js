@@ -22,3 +22,13 @@ export function computerChoose() {
   //   console.log(aiPick);
   //   console.log(num);
 }
+
+export function rock() {
+  document.getElementById("mypick").innerText = "You Choosed : Rock";
+}
+export function paper() {
+  document.getElementById("mypick").innerText = "You Choosed : Paper";
+}
+export function scissors() {
+  document.getElementById("mypick").innerText = "You Choosed : Scissors";
+}
